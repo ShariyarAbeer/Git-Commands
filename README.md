@@ -60,3 +60,19 @@ Git Commands
 | `git log --summary` | View changes (detailed) |
 | `git log --oneline` | View changes (briefly) |
 | `git diff [source branch] [target branch]` | Preview changes before merging |
+
+----------------------------------------------------- New File ---------------------------------------------------------
+…or create a new repository on the command line
+echo "# [Name of the file]" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git remote add origin https://github.com/ShariyarAbeer/[Name of the file].git
+git push -u origin master
+                
+…or push an existing repository from the command line
+git remote add origin https://github.com/ShariyarAbeer/[Name of the file].git
+git push -u origin master
+…or import code from another repository
+You can initialize this repository with code from a Subversion, Mercurial, or TFS project.
+
